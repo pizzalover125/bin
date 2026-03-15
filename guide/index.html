@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bin: Electrified Guide</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.hackclub.com/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://assets.hackclub.com/favicons/favicon-16x16.png">
+  <script src="../data-loading.js"></script>
+</head>
+<body>
+  <main class="guide-page">
+    <header class="guide-hero">
+      <p class="guide-kicker">Guide</p>
+      <h1>Know what every Bin part does.</h1>
+      <p class="guide-copy">Use this as your Bin: Electrified reference manual. Every card explains what a part does, when to use it, and gives you quick jump-off links for Raspberry Pi Pico MicroPython or ESP32 build docs.</p>
+      <div class="guide-actions">
+        <a href="../selector/" class="guide-button">Choose your parts</a>
+        <a href="../" class="guide-button guide-button-secondary">Back to Bin</a>
+      </div>
+      <p class="guide-note">Documentation links open targeted starting points for each platform so we can swap in more curated walkthroughs later.</p>
+    </header>
+
+    <section class="guide-section">
+      <div class="guide-section-header">
+        <span class="guide-step">01</span>
+        <div>
+          <h2>Computers</h2>
+          <p>The board is the brain of the whole build. Start here before wiring sensors, motors, and displays.</p>
+        </div>
+      </div>
+      <div class="guide-grid guide-grid-computers" id="guide-computers"></div>
+    </section>
+
+    <section class="guide-section">
+      <div class="guide-section-header">
+        <span class="guide-step">02</span>
+        <div>
+          <h2>Inputs</h2>
+          <p>Inputs sense the world or capture user interaction, then send those readings into your code.</p>
+        </div>
+      </div>
+      <div class="guide-grid" id="guide-inputs"></div>
+    </section>
+
+    <section class="guide-section">
+      <div class="guide-section-header">
+        <span class="guide-step">03</span>
+        <div>
+          <h2>Outputs</h2>
+          <p>Outputs are the parts your project drives, like lights, sound, motion, and screens.</p>
+        </div>
+      </div>
+      <div class="guide-grid" id="guide-outputs"></div>
+    </section>
+
+    <section class="guide-section guide-section-last">
+      <div class="guide-section-header">
+        <span class="guide-step">04</span>
+        <div>
+          <h2>Other</h2>
+          <p>These helper parts expand your project, keep it safe, or make prototyping much easier.</p>
+        </div>
+      </div>
+      <div class="guide-grid" id="guide-other"></div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

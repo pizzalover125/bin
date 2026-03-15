@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bin: Electrified</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.hackclub.com/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://assets.hackclub.com/favicons/favicon-16x16.png">
+  <script src="../data-loading.js"></script>
+</head>
+<body>
+  <main class="selector-page">
+    <header class="selector-hero">
+      <div class="selector-hero-copy">
+        <h1>Pick your build.</h1>
+        <p class="selector-intro">Choose one computer, then mix up to 8 modules across inputs and outputs.</p>
+      </div>
+    </header>
+
+    <section class="selector-group">
+      <div class="selector-group-header">
+        <span class="selector-step">01</span>
+        <div>
+          <h2>Computer</h2>
+          <p>Choose the brain of your project. This choice is separate from the 8-module limit.</p>
+        </div>
+      </div>
+      <div class="selector-grid selector-grid-computers" id="computer-grid"></div>
+    </section>
+
+    <section class="selector-group">
+      <div class="selector-group-header">
+        <span class="selector-step">02</span>
+        <div>
+          <h2>Inputs</h2>
+          <p>Sensors, dials, buttons, and anything your project listens to.</p>
+        </div>
+      </div>
+      <div class="selector-grid" id="inputs-grid"></div>
+    </section>
+
+    <section class="selector-group selector-group-last">
+      <div class="selector-group-header">
+        <span class="selector-step">03</span>
+        <div>
+          <h2>Outputs</h2>
+          <p>Displays, lights, motors, buzzers, and other things your project drives.</p>
+        </div>
+      </div>
+      <div class="selector-grid" id="outputs-grid"></div>
+    </section>
+
+    <section class="selector-group selector-group-last selector-group-other">
+      <div class="selector-group-header">
+        <span class="selector-step">04</span>
+        <div>
+          <h2>Other</h2>
+          <p>Helper parts and essentials that don't fit neatly into inputs or outputs.</p>
+        </div>
+      </div>
+      <div class="selector-grid" id="other-grid"></div>
+    </section>
+  </main>
+
+  <div class="selector-actionbar">
+    <div class="selector-action-copy">
+      <strong id="selection-summary">Select a computer and at least 1 module</strong>
+      <span id="selection-detail">You can choose up to 8 input/output modules.</span>
+    </div>
+    <button class="selector-continue" id="continue-button" disabled>
+      Continue
+      <img src="../icons/arrow_white.svg" alt="">
+    </button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
